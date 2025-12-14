@@ -29,4 +29,113 @@ Multiple approaches were implemented, evaluated, and compared to understand thei
 ---
 
 ## Repository Structure
+Sign-Language-Recognition/
+├── README.md
+├── requirements.txt
+├── data/
+├── models/
+├── src/
+│   ├── mediapipe.py
+│   ├── cnn.py
+│   ├── ann.py
+│   ├── train.py
+│   └── realtime.py
+├── games/
+│   ├── asl_game/
+│   └── ninja_game/
+└── docs/
+
+
+Recommended starting point: `mediapipe/` and `cnn02/`
+
+---
+
+## Technical Approach
+
+### Hand Detection
+- MediaPipe Hands
+- 21 hand landmarks extracted per frame
+
+### Models Used
+- Convolutional Neural Networks (CNN)
+- Artificial Neural Networks (ANN)
+
+### Learning Pipeline
+1. Data collection and preprocessing  
+2. Feature extraction (images and landmarks)  
+3. Model training and validation  
+4. Real-time inference using webcam input  
+
+---
+
+## Tech Stack
+
+- Programming Language: Python  
+- Libraries and Frameworks:
+  - OpenCV
+  - MediaPipe
+  - TensorFlow / Keras
+  - NumPy
+  - Pandas  
+- Domains:
+  - Computer Vision
+  - Deep Learning
+  - Human-Computer Interaction  
+
+---
+
+## Interactive Components
+
+To improve usability and engagement, the project includes:
+- ASL-based learning game
+- Ninja game demonstrating gesture-based control
+
+These components show how sign language recognition can be integrated into educational and interactive applications.
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Git
+- Webcam (for real-time sign recognition)
+
+Check Python version:
+```bash
+python --version
+
+Clone the Repository
+git clone https://github.com/<your-username>/Sign-Language-Recognition.git
+cd Sign-Language-Recognition
+
+Create and Activate Virtual Environment
+python -m venv venv
+
+venv\Scripts\activate
+
+Install Dependencies
+pip install -r requirements.txt
+pip install opencv-python mediapipe tensorflow numpy pandas
+
+Dataset Setup
+Preprocess the dataset:
+python src/data/preprocessing.py
+
+Train Models (Optional)
+python src/training/train_cnn.py
+python src/training/train_ann.py
+
+Run Real-Time Sign Language Recognition
+python src/inference/realtime.py
+
+Run Interactive Applications
+Run ASL learning game:
+python apps/asl_game/game.py
+
+Run Ninja game:
+python apps/ninja_game/game.py
+
+
 
