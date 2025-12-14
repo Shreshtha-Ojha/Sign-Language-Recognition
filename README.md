@@ -33,71 +33,30 @@ Sign-Language-Recognition/
 ├── requirements.txt
 ├── .gitignore
 │
-├── docs/
-│   ├── architecture.md
-│   ├── dataset.md
-│   ├── experiments.md
-│   └── presentation.pptx
-│
 ├── data/
 │   ├── raw/
-│   │   ├── A/
-│   │   ├── B/
-│   │   └── C/
-│   ├── processed/
-│   └── samples/
+│   └── processed/
 │
 ├── models/
-│   ├── cnn/
-│   ├── ann/
-│   └── checkpoints/
-│
-├── notebooks/
-│   ├── cnn_experiments.ipynb
-│   ├── ann_experiments.ipynb
-│   └── analysis.ipynb
+│   ├── cnn_model.h5
+│   └── ann_model.h5
 │
 ├── src/
-│   ├── __init__.py
-│   ├── config/
-│   │   └── config.yaml
-│   ├── data/
-│   │   ├── loader.py
-│   │   └── preprocessing.py
-│   ├── features/
-│   │   ├── mediapipe_utils.py
-│   │   └── landmarks.py
-│   ├── models/
-│   │   ├── cnn.py
-│   │   ├── ann.py
-│   │   └── base_model.py
-│   ├── training/
-│   │   ├── train_cnn.py
-│   │   └── train_ann.py
-│   ├── inference/
-│   │   ├── realtime.py
-│   │   └── predict.py
-│   ├── evaluation/
-│   │   └── metrics.py
-│   └── utils/
-│       └── logger.py
+│   ├── mediapipe_utils.py
+│   ├── cnn.py
+│   ├── ann.py
+│   ├── train.py
+│   └── realtime.py
 │
-├── apps/
-│   ├── realtime_app/
-│   │   └── app.py
+├── games/
 │   ├── asl_game/
 │   │   └── game.py
 │   └── ninja_game/
 │       └── game.py
 │
-├── tests/
-│   ├── test_models.py
-│   └── test_inference.py
-│
-└── scripts/
-    ├── collect_data.py
-    ├── train_all.py
-    └── evaluate.py
+└── docs/
+    └── presentation.pptx
+
 ```
 
 ---
