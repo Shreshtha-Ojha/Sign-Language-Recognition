@@ -27,6 +27,7 @@ Multiple approaches were implemented, evaluated, and compared to understand thei
 - Game-based learning modules for improved user engagement  
 
 ---
+```
 Sign-Language-Recognition/
 ├── README.md
 ├── requirements.txt
@@ -97,7 +98,7 @@ Sign-Language-Recognition/
     ├── collect_data.py
     ├── train_all.py
     └── evaluate.py
-
+```
 
 ---
 
