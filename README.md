@@ -27,23 +27,77 @@ Multiple approaches were implemented, evaluated, and compared to understand thei
 - Game-based learning modules for improved user engagement  
 
 ---
-
-## Repository Structure
 Sign-Language-Recognition/
+│
 ├── README.md
 ├── requirements.txt
+├── .gitignore
+│
+├── docs/
+│   ├── architecture.md
+│   ├── dataset.md
+│   ├── experiments.md
+│   └── presentation.pptx
+│
 ├── data/
+│   ├── raw/
+│   │   ├── A/
+│   │   ├── B/
+│   │   └── C/
+│   ├── processed/
+│   └── samples/
+│
 ├── models/
+│   ├── cnn/
+│   ├── ann/
+│   └── checkpoints/
+│
+├── notebooks/
+│   ├── cnn_experiments.ipynb
+│   ├── ann_experiments.ipynb
+│   └── analysis.ipynb
+│
 ├── src/
-│   ├── mediapipe.py
-│   ├── cnn.py
-│   ├── ann.py
-│   ├── train.py
-│   └── realtime.py
-├── games/
+│   ├── __init__.py
+│   ├── config/
+│   │   └── config.yaml
+│   ├── data/
+│   │   ├── loader.py
+│   │   └── preprocessing.py
+│   ├── features/
+│   │   ├── mediapipe_utils.py
+│   │   └── landmarks.py
+│   ├── models/
+│   │   ├── cnn.py
+│   │   ├── ann.py
+│   │   └── base_model.py
+│   ├── training/
+│   │   ├── train_cnn.py
+│   │   └── train_ann.py
+│   ├── inference/
+│   │   ├── realtime.py
+│   │   └── predict.py
+│   ├── evaluation/
+│   │   └── metrics.py
+│   └── utils/
+│       └── logger.py
+│
+├── apps/
+│   ├── realtime_app/
+│   │   └── app.py
 │   ├── asl_game/
+│   │   └── game.py
 │   └── ninja_game/
-└── docs/
+│       └── game.py
+│
+├── tests/
+│   ├── test_models.py
+│   └── test_inference.py
+│
+└── scripts/
+    ├── collect_data.py
+    ├── train_all.py
+    └── evaluate.py
 
 
 Recommended starting point: `mediapipe/` and `cnn02/`
