@@ -28,7 +28,6 @@ Multiple approaches were implemented, evaluated, and compared to understand thei
 
 ---
 Sign-Language-Recognition/
-│
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -99,8 +98,6 @@ Sign-Language-Recognition/
     ├── train_all.py
     └── evaluate.py
 
-
-Recommended starting point: `mediapipe/` and `cnn02/`
 
 ---
 
