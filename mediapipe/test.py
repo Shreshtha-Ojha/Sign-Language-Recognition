@@ -1,7 +1,7 @@
 import cv2
 import os
 import numpy as np
-import mediapipe as mpi
+import mediapipe as mp
 import math
 from sklearn.ensemble import RandomForestClassifier
 import joblib
